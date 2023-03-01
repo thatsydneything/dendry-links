@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    /* border: 1px solid red; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start custom styles */
+
+* 
+{
+    box-sizing: border-box;
+}
+
+header, nav 
+{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Wendy One', sans-serif;
+    color: #c1c1c1;
+    padding-bottom: 3em;
+    margin-bottom: 1em;
+}
+
+body {
+    background-color: #c1c1c1;
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.wrapper 
+{
+    margin: 2vw;
+}
+
+.header-image 
+{
+    width: 100%
+}
+
+.header-text h1
+{
+    text-align: center;
+    font-size: calc(100vw/10);
+}
+
+.header-text span 
+{
+    text-align: center;
+    display: block;
+    font-size: calc(100vw/15);
+}
+
+header, nav 
+{
+    border-radius: calc(100vw/8);
+    background: linear-gradient(#382007,#673f17);
+}
+
+nav 
+{
+    padding: 1em;
+}
+
+nav ul 
+{
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav ul li
+{
+    aspect-ratio: 1/1;
+    display: flex;
+}
+
+nav ul li > * 
+{
+    margin: auto;
+}
+
+.fa-youtube, .fa-twitch, .fa-mastodon, .fa-facebook, .fa-instagram, .fa-tiktok, .fa-discord, .fa-steam-symbol
+{
+    color: #c1c1c1
+}
+
+.desktop-nav 
+{
+  display: none;
+}
+
+h2 
+{
+    font-size: calc(100vw/10);
+    margin: 0 auto;
+}
+
+@media (prefers-color-scheme: dark) 
+{ 
+    body 
+    {
+        background-color: #121212
+    }
+}
